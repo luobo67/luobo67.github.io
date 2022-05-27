@@ -15,6 +15,10 @@
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
   <!-- Load our React component. -->
-  <script src="like_button.js"></script>
+  <script src="like_button.js">
+    const domContainer = document.querySelector('#like_button_container');
+const root = ReactDOM.createRoot(domContainer);
+root.render(e(LikeButton));
+    </script>
 </body>
 </html>
